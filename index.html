@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mohammad Jowkari | Cybersecurity Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --green: #00ff84;
+      --light: #d0d0d0;
+      --card: #1a1a1a;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: url("https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 0;
+    }
+
+    header, section, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: var(--green);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: black;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--light);
+    }
+
+    .badges {
+      margin: 1rem 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--green);
+      color: black;
+      padding: 0.3rem 0.8rem;
+      margin: 0.3rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 1.8rem;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-left: 4px solid var(--green);
+      border-radius: 6px;
+    }
+
+    .card h4 {
+      margin: 0 0 0.5rem;
+      color: var(--green);
+    }
+
+    .card p {
+      color: var(--light);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mohammad Jowkari</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="badges">
+      <span class="badge">Cybersecurity Student</span>
+      <span class="badge">Digital Forensics</span>
+    </div>
+    <h2>Securing the Digital World</h2>
+    <p>Ethical Hacker • Cloud Architect • Security Analyst • Digital Forensics</p>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Me</h3>
+    <p>
+      I’m a Digital Forensics and Cybersecurity student at BCIT, passionate about protecting systems, uncovering digital evidence, and building secure infrastructure. With years of business and tech experience, I bring both analytical thinking and real-world skills to the field.
+    </p>
+  </section>
+
+  <section class="section" id="projects">
+    <h3>Projects</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4>☁️ Cloud Server with Docker</h4>
+        <p>Deployed a private cloud with Docker and RDP.</p>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7316579914407677954/" target="_blank">View on LinkedIn</a>
+      </div>
+      <div class="card">
+        <h4>🖥️ Python Cisco GUI</h4>
+        <p>GUI to manage Cisco routers/switches without CLI.</p>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7198427878500229120/" target="_blank">View on LinkedIn</a>
+      </div>
+      <div class="card">
+        <h4>🧪 FTK Imager Forensic Recovery</h4>
+        <p>Recovered files and validated drive sectors.</p>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7186269678465763328-Ohgh" target="_blank">View on LinkedIn</a>
+      </div>
+      <div class="card">
+        <h4>💬 WhatsApp-like Chat System</h4>
+        <p>HTML messaging app in Python hosted on Linux.</p>
+        <a href="https://www.linkedin.com/posts/mohammad-jowkari-058873275_this-is-one-of-my-most-impressive-projects-activity-7192797368293941248-mTTA" target="_blank">View on LinkedIn</a>
+      </div>
+      <div class="card">
+        <h4>🛡️ SSH Honeypot</h4>
+        <p>Python honeypot logs IPs of attackers via SSH trap.</p>
+        <a href="https://www.linkedin.com/posts/mohammad-jowkari-058873275_i-have-created-a-honeypot-using-python-when-activity-7189371499483484160-jJAJ" target="_blank">View on LinkedIn</a>
+      </div>
+      <div class="card">
+        <h4>🌐 Network Scanner</h4>
+        <p>Scan IP/UDP/TCP/ICMP locally and save results.</p>
+        <a href="https://www.linkedin.com/posts/mohammad-jowkari-058873275_i-created-a-network-scanner-for-ip-udp-activity-7187536217415024641-JeM_" target="_blank">View on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>Linux & Windows Server Admin</li>
+      <li>Python, Docker, CCNA Networking</li>
+      <li>Palo Alto, FortiGate</li>
+      <li>Splunk, FTK Imager, Wireshark</li>
+      <li>AWS, Azure, Office 365</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:Jowkari.1mh@gmail.com">Jowkari.1mh@gmail.com</a></p>
+    <p>Phone: 778-266-1454</p>
+    <p><a href="https://ca.linkedin.com/in/mohammad-jowkari-058873275" target="_blank">LinkedIn Profile</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Mohammad Jowkari | Built with 💻 and ☕
+  </footer>
+
+</body>
+</html>
